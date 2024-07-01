@@ -1,0 +1,35 @@
+<view class="display">
+  <view class="display-value">{{displayValue}}</view>
+  <view class="display-operator">{{currentOperator}}</view>
+</view>
+<view class="buttons">
+  <view>
+    <view hover-class="button-bg" bindtap="onResetPress">C</view>
+    <view hover-class="button-bg" bindtap="onDeletePress">DEL</view>
+    <view hover-class="button-bg" bindtap="onOperatorPress" data-val="%">%</view>
+    <view hover-class="button-bg" bindtap="onOperatorPress" data-val="/">÷</view>
+  </view>
+  <view>
+    <view hover-class="button-bg" bindtap="onNumberPress" data-val="7">7</view>
+    <view hover-class="button-bg" bindtap="onNumberPress" data-val="8">8</view>
+    <view hover-class="button-bg" bindtap="onNumberPress" data-val="9">9</view>
+    <view hover-class="button-bg" bindtap="onOperatorPress" data-val="*">x</view>
+  </view>
+  <view>
+    <view hover-class="button-bg" bindtap="onNumberPress" data-val="4">4</view>
+    <view hover-class="button-bg" bindtap="onNumberPress" data-val="5">5</view>
+    <view hover-class="button-bg" bindtap="onNumberPress" data-val="6">6</view>
+    <view hover-class="button-bg" bindtap="onOperatorPress" data-val="-">-</view>
+  </view>
+  <view>
+    <view hover-class="button-bg" bindtap="onNumberPress" data-val="1">1</view>
+    <view hover-class="button-bg" bindtap="onNumberPress" data-val="2">2</view>
+    <view hover-class="button-bg" bindtap="onNumberPress" data-val="3">3</view>
+    <view hover-class="button-bg" bindtap="onOperatorPress" data-val="+">+</view>
+  </view>
+  <view>
+    <view hover-class="button-bg" bindtap="onNumberPress" data-val="0">0</view>
+    <view hover-class="button-bg" bindtap="onDotPress">.</view>
+    <view hover-class="button-bg" bindtap="onOperatorPress" data-val="=">=</view>
+  </view>
+</view>

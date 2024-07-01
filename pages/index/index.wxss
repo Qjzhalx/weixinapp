@@ -1,0 +1,55 @@
+page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.display {
+  flex: 1;
+  background: #e1f5fe;
+  position: relative;
+}
+.display-value {
+  position: absolute;
+  font-size: 28pt;
+  bottom: 5vh;
+  right: 3vw;
+}
+.display-operator {
+  font-size: 16pt;
+  position: absolute;
+  bottom: 2vh;
+  right: 3vw;
+}
+.buttons {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: 18pt;
+  border-top: 1rpx solid #ccc;
+  border-left: 1rpx solid #ccc;
+}
+.buttons > view {
+  flex: 1;
+  display: flex;
+}
+.buttons > view > view {
+  flex-basis: 25%;
+  border-right: 1rpx solid #ccc;
+  border-bottom: 1rpx solid #ccc;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttons > view:last-child > view:first-child {
+  flex-basis: 50%;
+}
+.buttons > view:first-child > view:first-child {
+  color: #d32f2f;
+}
+.buttons > view > view:last-child {
+  color: #f57c00;
+}
+.button-bg {
+  background: #e0e0e0;
+}
